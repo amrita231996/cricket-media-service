@@ -1,0 +1,690 @@
+[
+  {
+    "_id": "02c26a2b-5338-460b-bd6c-1bbb1b1e01fc",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/auth/sign-up",
+    "url": "{{url}}/auth/login",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-08-18T14:50:56.000Z",
+    "modified": "2022-09-22T09:47:56.564Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\":\"anushiyaponnusamy@gmail.com\",\n  \"password\":\"anushiya\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "3754106c-1382-4240-8dc2-e9d53e11e34d",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/save-error-in-aws",
+    "url": "{{url}}/save-error-in-aws",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-08-18T14:52:41.836Z",
+    "modified": "2022-08-19T09:10:09.654Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "60be8b68-1cc5-41c4-8244-f456b36378c1",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/upload-file",
+    "url": "{{url}}/upload-file",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-08-22T14:54:07.808Z",
+    "modified": "2022-11-18T07:05:39.749Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [],
+      "files": [
+        {
+          "name": "uploader",
+          "value": "c:\\Users\\anush\\Downloads\\HD-wallpaper-ms-dhoni-chennai-super-kings-cricket-csk-definitely-not-india-sports.jpg"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "9da2b72a-8147-401f-9bad-4dd12e764f6f",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/delete-file",
+    "url": "{{url}}/delete-file",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-22T15:07:47.118Z",
+    "modified": "2022-08-22T15:07:47.119Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"fileName\":\"Capture2_22_8_2022_8_33_PM.PNG\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "c65c2c8d-d548-41d3-afff-03cb5ece8048",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3002/feed/addGivenRunByGivenUser",
+    "url": "http://localhost:3002/auth/given-runs",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-08-27T06:12:36.186Z",
+    "modified": "2022-08-27T07:20:24.330Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n\"userId\":\"630461190c9f7463913c1a07\",\n\"givenRun\":4\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "906240e0-d94a-4108-8a60-0321ffd2727a",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/feed/create",
+    "url": "{{url}}/feed/create",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-10-07T10:46:53.502Z",
+    "modified": "2022-10-13T15:22:20.527Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"postMessage\":\"rab\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "b592e1d9-7d03-4101-91a0-141e92cf82e0",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/feed/shared",
+    "url": "{{url}}/feed/shared",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-10-10T05:36:30.880Z",
+    "modified": "2022-10-10T05:50:39.097Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n \"feedId\":\"6343ae938e2f0d058bc1b85c\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "d6c351f5-6ca7-4ceb-a42c-720b3676249c",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/feed/addComment",
+    "url": "{{url}}/feed/addComment",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T05:43:52.671Z",
+    "modified": "2022-10-10T05:51:29.574Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n \"feedId\":\"6343ae938e2f0d058bc1b85c\",\n \"commentText\":\"hi rmq\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "21ca0adc-c0d4-4c2e-b091-8190eff9efb9",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/feed/addComment",
+    "url": "{{url}}/feed/addComment",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-10-10T05:51:35.738Z",
+    "modified": "2022-10-10T05:59:44.732Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n \"id\":\"6343ae938e2f0d058bc1b85c\",\n \"commentText\":\"hi rmq\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "fc61b886-bce1-4267-ac5a-d917666aae79",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/get-followers-by-visitingUserId/",
+    "url": "{{url}}/get-followers-by-visitingUserId/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T06:43:58.374Z",
+    "modified": "2022-10-10T06:43:58.399Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "0dc927c9-9ca7-47f8-bbed-144a82c4267f",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/get-followers-by-visitingUserId/62f4914376b8f809a4ad715c/1/10",
+    "url": "{{url}}/get-followers-by-visitingUserId/62f4914376b8f809a4ad715c/1/10",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T06:44:29.819Z",
+    "modified": "2022-10-10T06:45:51.261Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "f519c697-a886-49a6-9352-b411e2b6b074",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/get-followers-by-visitingUserId/62f4914376b8f809a4ad715c/1/2",
+    "url": "{{url}}/get-followers-by-visitingUserId/62f4914376b8f809a4ad715c/1/2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T06:46:46.916Z",
+    "modified": "2022-10-10T06:46:46.932Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "fad40be2-3ed3-4817-8002-f81a641582cb",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/get-followers-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/2",
+    "url": "{{url}}/get-followers-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T06:49:21.548Z",
+    "modified": "2022-10-10T06:54:42.085Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "54718a0e-9e72-4856-a8cb-d647bb1271f9",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3002/get-followers-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/2",
+    "url": "localhost:3002/get-followers-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T06:49:33.791Z",
+    "modified": "2022-10-10T06:49:38.183Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "d0a9f6c0-f43f-4124-a54f-50c728be8aa8",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/get-followers-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/2/",
+    "url": "{{url}}/get-followers-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/2/",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T06:50:05.556Z",
+    "modified": "2022-10-10T06:50:05.574Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "b8b37e92-cf27-45e2-a953-3d08f5d84ebe",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/get-followers-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/10",
+    "url": "{{url}}/get-followers-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/10",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T07:06:23.346Z",
+    "modified": "2022-10-10T07:06:23.360Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "f1aaac84-ee68-43ea-b9ed-9b61674993bc",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/auth/get-followers-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/10",
+    "url": "{{url}}/auth/get-followers-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/10",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T07:06:38.330Z",
+    "modified": "2022-10-10T07:21:34.840Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "18655d32-e6c1-4583-80d9-fbe6d42d818c",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/auth/get-followers-by-visitingUserId/62f4914376b8f809a4ad715c/1/10",
+    "url": "{{url}}/auth/get-followers-by-visitingUserId/62f4914376b8f809a4ad715c/1/10",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T07:06:57.162Z",
+    "modified": "2022-10-10T07:14:04.030Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "632fbbf7-20ee-4c1c-857d-9bf87d10bc60",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/auth/get-following-by-visitingUserId/62f4914376b8f809a4ad715c/1/10",
+    "url": "{{url}}/auth/get-following-by-visitingUserId/62f4914376b8f809a4ad715c/1/10",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T07:14:47.702Z",
+    "modified": "2022-10-10T07:14:47.736Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "254688b3-cdb6-4bcb-b6db-0bacabc042de",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/auth/get-following-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/10",
+    "url": "{{url}}/auth/get-following-by-visitingUserId/62f10c678bbc7d2fc8eb5679/1/10",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-10-10T07:15:07.447Z",
+    "modified": "2022-10-10T07:15:07.494Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "adfd923c-2ebb-4713-82c0-7cf0caf340f7",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/auth/blockUser",
+    "url": "{{url}}/auth/blockUser",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-10-11T08:55:18.284Z",
+    "modified": "2022-10-11T09:50:27.110Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"blockedUSerId\":\"rtrtr\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "4699aeb8-2fe3-4d7a-8ac4-2be358531aa4",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/feed/comment",
+    "url": "{{url}}/feed/comment",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-10-18T10:54:00.856Z",
+    "modified": "2022-10-18T10:54:01.527Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e34ff467-3e24-4e66-abcc-3a5a9b0525ca",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/feed/comment/update-undefined-username",
+    "url": "{{url}}/feed/comment/update-undefined-username",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-10-18T10:54:24.454Z",
+    "modified": "2022-10-18T11:54:04.234Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "6cc3904d-21b3-4675-ba54-1ed8ac5e3106",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/events/createEvent",
+    "url": "{{url}}/events/createEvent",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-11-08T09:37:03.089Z",
+    "modified": "2022-11-08T11:07:36.433Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "eventTitle",
+          "value": "tennis"
+        },
+        {
+          "name": "startDateTime[date]",
+          "value": "9 nov 2022"
+        },
+        {
+          "name": "eventdescription",
+          "value": "tennis"
+        },
+        {
+          "name": "registrationFee",
+          "value": "800"
+        },
+        {
+          "name": "eventLocation",
+          "value": "mb"
+        },
+        {
+          "name": "eventNameCode",
+          "value": "mb1"
+        },
+        {
+          "name": "endDateTime[date]",
+          "value": "9 nov 2022"
+        },
+        {
+          "name": "endDateTime[time]",
+          "value": "9pm"
+        },
+        {
+          "name": "startDateTime[time]",
+          "value": "9pm"
+        }
+      ],
+      "files": [
+        {
+          "name": "uploader",
+          "value": "c:\\Users\\anush\\Downloads\\HD-wallpaper-ms-dhoni-chennai-super-kings-cricket-csk-definitely-not-india-sports.jpg"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "3455648b-40d1-4bb2-bac4-2d76eed89b77",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url",
+    "url": "{{url",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-08T12:06:10.491Z",
+    "modified": "2022-11-08T12:06:10.690Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "c2d72c9b-3b54-47f6-8be6-f4c47b311918",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/events/getAll",
+    "url": "{{url}}/events/getAll",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-08T12:06:40.109Z",
+    "modified": "2022-11-08T12:09:18.906Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "980c0573-9b5b-41b3-bc9d-bbbd7ced1d9e",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/events/getAll/1/2",
+    "url": "{{url}}/events/getAll/1/2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-08T12:09:37.131Z",
+    "modified": "2022-11-08T12:12:37.164Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "62fc43b3-226a-4c76-aff1-1a828b905ba6",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/events/getAll/1/10",
+    "url": "{{url}}/events/getAll/1/10",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-08T12:12:45.658Z",
+    "modified": "2022-11-17T06:19:37.997Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "17c21edc-5421-4884-8729-7854b05ab133",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/events/delete",
+    "url": "{{url}}/events/delete",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2022-11-08T12:19:14.986Z",
+    "modified": "2022-11-08T12:19:15.342Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\":\"636a31273dd7c061d4b58874\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "ec6c8931-16a1-4f4e-a860-16670cc8f758",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/auth/followersRankingOfAllTime/1/2",
+    "url": "{{url}}/auth/followersRankingOfAllTime/1/2",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-12-01T13:10:56.139Z",
+    "modified": "2022-12-01T13:10:56.139Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "cd8ec1a1-789c-4191-a826-a8515c362d8d",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/leaderboard/totalRunsRankingAllTimeMainPage/1/2",
+    "url": "{{url}}/leaderboard/totalRunsRankingAllTimeMainPage/1/5",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-12-01T13:10:56.139Z",
+    "modified": "2022-12-06T08:26:29.366Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "2a472577-5f5a-4bf1-a0f7-a6dcd64a6dd5",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/auth/followersRankingOfAllTime/2/2",
+    "url": "{{url}}/auth/followersRankingOfAllTime/1/10",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-12-01T13:11:08.362Z",
+    "modified": "2022-12-02T11:13:08.360Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "2c9b8189-e110-48c7-a726-9b19b34b07ee",
+    "colId": "history",
+    "containerId": "",
+    "name": "{{url}}/deal/updateDealCount",
+    "url": "{{url}}/deal/updateDealCount",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-12-13T09:01:21.245Z",
+    "modified": "2022-12-13T09:01:21.245Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"dealId\":\"63983a54ac99add4ff70e467\",\n  \"DealCount\":\"2\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  }
+]

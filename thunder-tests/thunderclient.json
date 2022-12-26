@@ -1,0 +1,2303 @@
+[
+  {
+    "_id": "19ce2b41-ea12-4a96-9125-1e66567048e6",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "def8936d-0c4c-4510-888d-7bd2124c8fc7",
+    "name": "create",
+    "url": "{{url}}/job/createJob",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-08-10T12:53:43.225Z",
+    "modified": "2022-08-23T04:31:07.381Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"jobTitle\":\"jobTitle\",\n    \"userId\":\"userId\",\n    \"userName\":\"userName\",\n    \"companyName\":\"companyName\",\n    \"companyEmail\":\"companyEmail\",\n    \"companyContact\":1234567890,\n    \"jobLocation\":\"jobLocation\",\n    \"employmentType\":\"employmentType\",\n    \"jobDescription\":\"jobDescription\",\n    \"workPlaceType\":\"workPlaceType\",\n    \"Experience\":\"Experience\",\n    \"Qualification\":\"Qualification\",\n    \"Remuneration\":\"Remuneration\",\n    \"OtherJobrequirements\":\"OtherJobrequirements\",\n    \"Department\":\"Department\",\n    \"jobDescriptionsFileName\":\"jobDescriptionsFileName\"\n\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "b6bb055c-fa39-464a-aed8-820467776986",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "def8936d-0c4c-4510-888d-7bd2124c8fc7",
+    "name": "getall",
+    "url": "{{url}}/job/getAll",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-08-10T12:53:43.226Z",
+    "modified": "2022-08-23T04:31:46.502Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "927bcb37-21e5-418c-80f9-04ae54f2f344",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/sign-up",
+    "url": "{{url}}/auth/sign-up",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-08-10T12:53:43.227Z",
+    "modified": "2022-08-10T12:53:43.227Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n    \"email\":\"gajendrapratap844@gmail.com\",\r\n    \"password\":\"12345\",\r\n    \"referredUserId\":\"623cdfdd610f4a0bb8f896e2\",\r\n    \"secretCode\":\"5657\"\r\n\r\n}"
+    }
+  },
+  {
+    "_id": "e39e102e-5a53-4e78-bd60-bbd82adb0989",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/login",
+    "url": "{{url}}/auth/login",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2022-08-10T12:53:43.228Z",
+    "modified": "2022-12-20T09:45:13.735Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"email\":\"anushiyaponnusamy@gmail.com\",\n    \"password\":\"anushiya\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f444585a-a221-4b7f-b671-9f0624be5c8f",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/update",
+    "url": "{{url}}/auth/update",
+    "method": "POST",
+    "sortNum": 50000,
+    "created": "2022-08-10T12:53:43.229Z",
+    "modified": "2022-10-06T05:52:29.323Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": ""
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "firstName",
+          "value": "gajendra"
+        },
+        {
+          "name": "lastName",
+          "value": "Pratap"
+        },
+        {
+          "name": "referredUserId",
+          "value": "62f4914376b8f809a4ad715c"
+        },
+        {
+          "name": "secretCode",
+          "value": "5657"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "f444585a-a221-4b7f-b671-9f0624be5c8f",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/update",
+    "url": "{{url}}/auth/update",
+    "method": "POST",
+    "sortNum": 50000,
+    "created": "2022-08-10T12:53:43.229Z",
+    "modified": "2022-10-06T05:52:29.323Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": ""
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "firstName",
+          "value": "gajendra"
+        },
+        {
+          "name": "lastName",
+          "value": "Pratap"
+        },
+        {
+          "name": "referredUserId",
+          "value": "62f4914376b8f809a4ad715c"
+        },
+        {
+          "name": "secretCode",
+          "value": "5657"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "d4697371-4de4-4012-be4d-dcd91e59ee17",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "4a4563d9-2702-494c-9c91-596c7e6d9dc9",
+    "name": "create",
+    "url": "{{url}}/feed/comment/create",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-08-10T12:53:43.234Z",
+    "modified": "2022-10-14T14:03:03.893Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"feedId\":\"634958ec30e8cdb9926c7d36\",\n    \"commentText\":\"vk\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "none"
+    },
+    "tests": []
+  },
+  {
+    "_id": "d4697371-4de4-4012-be4d-dcd91e59ee17",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "4a4563d9-2702-494c-9c91-596c7e6d9dc9",
+    "name": "create",
+    "url": "{{url}}/feed/comment/create",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-08-10T12:53:43.234Z",
+    "modified": "2022-10-14T14:03:03.893Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"feedId\":\"634958ec30e8cdb9926c7d36\",\n    \"commentText\":\"vk\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "c747e5e1-cd52-4bd8-81e4-451bee349d55",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "getAll",
+    "url": "{{url}}/feed/getAll/1/2/Tue%20Oct%2018%20202",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2022-08-10T12:53:43.237Z",
+    "modified": "2022-10-18T06:36:39.207Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "a42d3831-5b2b-4812-b99a-9bee75fb9a84",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "getTotalRun",
+    "url": "{{url}}/feed/getTotalRun",
+    "method": "GET",
+    "sortNum": 90000,
+    "created": "2022-08-10T12:53:43.238Z",
+    "modified": "2022-09-27T07:01:34.164Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": ""
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "c03a56c2-8b4c-43cd-96ac-46a25ef2a13a",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/name-search",
+    "url": "{{url}}/auth/name-search",
+    "method": "POST",
+    "sortNum": 150000,
+    "created": "2022-08-10T12:53:43.239Z",
+    "modified": "2022-12-21T10:13:16.547Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"searchText\":\"cricket\",\n     \"pageNumber\":10,\n    \"pagePerSize\":10\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "05cc2614-9fcd-4879-a02e-d0e50a5a66e6",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "search-feed-by-text",
+    "url": "{{url}}/feed/search-feed-by-text",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2022-08-10T12:53:43.240Z",
+    "modified": "2022-09-27T07:01:28.751Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n    \"searchText\":\"hello\",\r\n    \"pageNumber\":1,\r\n    \"pagePerSize\":10\r\n}"
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "c50ac2ba-4bd3-445b-b26e-21e33ca23aae",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "f1267f5b-1798-43e8-9aa0-1b4ad6858ecd",
+    "name": "http://localhost:3002/deal/create",
+    "url": "{{url}}/deal/create",
+    "method": "POST",
+    "sortNum": 345000,
+    "created": "2022-08-10T12:53:43.241Z",
+    "modified": "2022-12-13T09:09:03.059Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "Paytm Vouchers - ₹50"
+        },
+        {
+          "name": "redeemrun",
+          "value": "6000 "
+        },
+        {
+          "name": "desc",
+          "value": "Get yourself Paytm Money of ₹50"
+        },
+        {
+          "name": "encrptedcode",
+          "value": "xyz"
+        },
+        {
+          "name": "startTime",
+          "value": "2022-08-13T18:00:16.569+00:00"
+        },
+        {
+          "name": "endTime",
+          "value": "2022-10-30T18:00:16.569+00:00"
+        }
+      ],
+      "files": [
+        {
+          "name": "uploader",
+          "value": "c:\\Users\\anush\\Downloads\\Paytm_25_5_2022_5_15_AM.png"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "109276c9-ee37-47dd-bea7-4442adc2b75c",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/deal/getAll",
+    "url": "{{url}}/deal/getall",
+    "method": "GET",
+    "sortNum": 180000,
+    "created": "2022-08-10T12:53:43.242Z",
+    "modified": "2022-09-05T05:04:04.389Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTRiZGU3Y2FmOWUzY2ZmMTYwNTJkNyIsImVtYWlsIjoibWl0ZXNoMjFqdW5AZ21haWwuY29tIiwiZmlyc3ROYW1lIjoiTWl0ZXNoIiwibGFzdE5hbWUiOiJTYWh1IiwiYWN0aXZlIjpmYWxzZSwiaWF0IjoxNjYyMzU0MTQ2LCJleHAiOjE2NjI0NDA1NDZ9.4TSOAhNeK9reFuklLjPNhl4E8aj1hQUfBUW9dez92TE"
+    },
+    "tests": []
+  },
+  {
+    "_id": "e169325c-d89f-4cee-947f-6879cba83540",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/redeemDeal",
+    "url": "{{url}}/auth/redeemDeal",
+    "method": "POST",
+    "sortNum": 190000,
+    "created": "2022-08-10T12:53:43.243Z",
+    "modified": "2022-09-05T05:34:04.145Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"dealId\":\"6314bed3caf9e3cff160537c\",\n    \"name\":\"mitesh\",\n    \"email\":\"mitesh21jun@gmail.com\",\n    \"mobile\":9579338280\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "13ad88db-5eb8-4da4-b1b5-ca8e83ea5463",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/profile",
+    "url": "{{url}}/auth/profile",
+    "method": "POST",
+    "sortNum": 200000,
+    "created": "2022-08-10T12:53:43.244Z",
+    "modified": "2022-08-10T12:53:43.244Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"userId\":\"6249ac570025a0633847af58\"}"
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "40f460dc-be21-4853-b781-5e6eef912e8a",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/verify",
+    "url": "{{url}}/auth/verify",
+    "method": "POST",
+    "sortNum": 210000,
+    "created": "2022-08-10T12:53:43.245Z",
+    "modified": "2022-08-10T12:53:43.245Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"_id\":\"6230387027c89a23c43a0286\"}"
+    }
+  },
+  {
+    "_id": "e8e06802-9f17-4952-b6fd-f4185275fb9c",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/passwordReset",
+    "url": "{{url}}/auth/passwordReset",
+    "method": "POST",
+    "sortNum": 220000,
+    "created": "2022-08-10T12:53:43.246Z",
+    "modified": "2022-08-10T12:53:43.246Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"email\":\"gajendrapratap84@gmail.com\"}"
+    }
+  },
+  {
+    "_id": "3fffcc29-1f5e-4e2d-90bf-27804ba80498",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/passwordUpdate",
+    "url": "{{url}}/auth/passwordUpdate",
+    "method": "POST",
+    "sortNum": 230000,
+    "created": "2022-08-10T12:53:43.247Z",
+    "modified": "2022-08-10T12:53:43.247Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\"_id\":\"6230387027c89a23c43a0286\",\"password\":\"123459\"}"
+    }
+  },
+  {
+    "_id": "28839943-e0cc-484f-922b-dc78e3deb451",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost/auth/following-suggestion-users",
+    "url": "{{url}}/auth/following-suggestion-users",
+    "method": "GET",
+    "sortNum": 240000,
+    "created": "2022-08-10T12:53:43.248Z",
+    "modified": "2022-08-10T12:53:43.248Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "2ff2742d-8c99-4a73-b9a6-cbd31d5a3d2f",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/add-following-user",
+    "url": "{{url}}/auth/add-following-user",
+    "method": "POST",
+    "sortNum": 250000,
+    "created": "2022-08-10T12:53:43.249Z",
+    "modified": "2022-12-01T13:27:04.725Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"followingUserId\":\"638882dd79d5971e1f4b1c05\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "966f8eac-0096-4894-9942-4c3af04b181f",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "get-following-feed",
+    "url": "{{url}}/feed/get-following-feed/1/2",
+    "method": "GET",
+    "sortNum": 100000,
+    "created": "2022-08-10T12:53:43.250Z",
+    "modified": "2022-09-27T07:01:37.107Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "b429cade-981f-4333-a465-de9baa325af3",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/remove-following-user",
+    "url": "{{url}}/auth/remove-following-user",
+    "method": "POST",
+    "sortNum": 270000,
+    "created": "2022-08-10T12:53:43.251Z",
+    "modified": "2022-10-17T12:21:51.365Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n     \"followingUserId\":\"6335a0fef46e83bc29615f0d\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "40cc5bd9-f0ca-4988-bd16-60c1eb0f05eb",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/get-followers-user",
+    "url": "{{url}}/auth/get-followers-user/1/1",
+    "method": "GET",
+    "sortNum": 280000,
+    "created": "2022-08-10T12:53:43.252Z",
+    "modified": "2022-08-10T12:53:43.252Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "35819684-22b5-4231-a578-10d842e82a05",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "getMyfeed",
+    "url": "{{url}}/feed/getMyfeed/1/10",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2022-08-10T12:53:43.253Z",
+    "modified": "2022-09-27T07:01:32.970Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "9f729882-4de9-4446-afa7-923cc924cfa4",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/newUserReference",
+    "url": "{{url}}/auth/newUserReference",
+    "method": "POST",
+    "sortNum": 300000,
+    "created": "2022-08-10T12:53:43.254Z",
+    "modified": "2022-08-10T12:53:43.254Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n    \"email\":\"navanathbansode61@gmail.com\",\r\n    \"_id\":\"62338b858f1a0e26f4a0275b\"\r\n}"
+    }
+  },
+  {
+    "_id": "f89f9d25-9983-4352-b1e5-56473599e7f4",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/get-following-byuserid/6227ac201b854c58f4424065",
+    "url": "{{url}}/auth/get-following-byuserid/634e3503ddb949d912216f3a/1/20",
+    "method": "GET",
+    "sortNum": 310000,
+    "created": "2022-08-10T12:53:43.255Z",
+    "modified": "2022-10-18T05:11:27.769Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "aae786bd-dfb1-460e-adad-d307ce3b43a4",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/get-followers-byuserid/6227ac201b854c58f4424065",
+    "url": "{{url}}/auth/get-followers-byuserid/638882dd79d5971e1f4b1c05/1/10",
+    "method": "GET",
+    "sortNum": 320000,
+    "created": "2022-08-10T12:53:43.256Z",
+    "modified": "2022-12-01T13:29:35.224Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "9507dd6c-bb54-4eb3-b99e-28032b1c4420",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/used-deals-by-token",
+    "url": "{{url}}/auth/used-deals-by-token",
+    "method": "GET",
+    "sortNum": 330000,
+    "created": "2022-08-10T12:53:43.257Z",
+    "modified": "2022-08-10T12:53:43.257Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "c4a7ee86-99f7-4160-a2e0-2606d0966c01",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "feedById",
+    "url": "{{url}}/feed/feedById/622a3cb0675ca80e1852f239",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2022-08-10T12:53:43.258Z",
+    "modified": "2022-09-27T07:01:31.576Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "93d7620f-4191-41fd-a224-26dd2bba0bb1",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "update-shared-feed",
+    "url": "{{url}}/feed/update-shared-feed",
+    "method": "POST",
+    "sortNum": 110000,
+    "created": "2022-08-10T12:53:43.259Z",
+    "modified": "2022-09-27T07:01:38.582Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n    \"updatedSharedText\":\"updatedSharedText\",\r\n    \"feedId\":\"623c84f5c6e8aa3900b3ac68\",\r\n    \"sharedbyUserId\":\"6227ac201b854c58f4424065\"\r\n}"
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "ea7bd6f8-550a-4549-bc48-9db7e090f88e",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/get-all-user",
+    "url": "{{url}}/auth/get-all-user",
+    "method": "GET",
+    "sortNum": 360000,
+    "created": "2022-08-10T12:53:43.260Z",
+    "modified": "2022-08-10T12:53:43.260Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "0dec9a28-fc0c-4e63-a910-adaa09399bbd",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/get-all-suggestion-users",
+    "url": "{{url}}/auth/get-all-suggestion-users/1/10",
+    "method": "GET",
+    "sortNum": 370000,
+    "created": "2022-08-10T12:53:43.261Z",
+    "modified": "2022-08-31T14:42:46.170Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZWQzNTY4NTBlMDI4MWU3ODA4OGQwYiIsImVtYWlsIjoicmlzaGFiaHZpY2t5OThAZ21haWwuY29tIiwiZmlyc3ROYW1lIjoicmlzc2hhYmgiLCJsYXN0TmFtZSI6Im5lZ2kiLCJhY3RpdmUiOmZhbHNlLCJpYXQiOjE2NjE5NTY5MzUsImV4cCI6MTY2MjA0MzMzNX0.HUjKkFjO763IvV9RVs8yn909BTpqZ150Ulx3soezfCg"
+    },
+    "tests": []
+  },
+  {
+    "_id": "fbb67d9c-3db7-4976-8de3-9be9fc3b259f",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "feedByUserId",
+    "url": "{{url}}/feed/feedByUserId/6249ac570025a0633847af58/1/6",
+    "method": "GET",
+    "sortNum": 120000,
+    "created": "2022-08-10T12:53:43.262Z",
+    "modified": "2022-09-27T07:01:41.252Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "c2b5134d-778a-42ef-96fe-0c1e491c9c94",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/notification/create",
+    "url": "{{url}}/notification/create",
+    "method": "POST",
+    "sortNum": 390000,
+    "created": "2022-08-10T12:53:43.263Z",
+    "modified": "2022-08-10T12:53:43.263Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n    \r\n    \"description\":\"Abc ne given 6 run\"\r\n}"
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "96c729f0-d83b-40de-841b-1e8419502542",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/notification/getActiveByToken",
+    "url": "{{url}}/notification/getActiveByToken",
+    "method": "GET",
+    "sortNum": 400000,
+    "created": "2022-08-10T12:53:43.264Z",
+    "modified": "2022-08-10T12:53:43.264Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "48dfcf27-82f1-45c1-9ba3-0d65379ee7c5",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/notification/updateAfterSeenByUserId",
+    "url": "{{url}}/notification/updateAfterSeenByUserId",
+    "method": "POST",
+    "sortNum": 410000,
+    "created": "2022-08-10T12:53:43.265Z",
+    "modified": "2022-08-10T12:53:43.265Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{}"
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "ad0206c2-8171-4539-88e0-81ab32ca4116",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/invite/inviteLink",
+    "url": "{{url}}/invite/inviteLink",
+    "method": "GET",
+    "sortNum": 420000,
+    "created": "2022-08-10T12:53:43.266Z",
+    "modified": "2022-08-10T12:53:43.266Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "2afd9d58-98de-4aba-96aa-cd354e3f6bbd",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/invite/sendEmail",
+    "url": "{{url}}/invite/sendEmail",
+    "method": "POST",
+    "sortNum": 430000,
+    "created": "2022-08-10T12:53:43.267Z",
+    "modified": "2022-08-10T12:53:43.267Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n    \"email\":\"gajendrapratap84@gmail.com\"\r\n}"
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "4df60417-65e8-4ab4-bf41-3e7ed4620b2e",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/invite/622708cba44f6291e3792ed0/8639",
+    "url": "{{url}}/invite/validate/623cdfdd610f4a0bb8f896e2/5044",
+    "method": "GET",
+    "sortNum": 440000,
+    "created": "2022-08-10T12:53:43.268Z",
+    "modified": "2022-08-10T12:53:43.268Z",
+    "headers": []
+  },
+  {
+    "_id": "685fa598-1908-4cc2-a9cc-fc4eb2663870",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/notification/get-top-10",
+    "url": "{{url}}/notification/get-top-10",
+    "method": "GET",
+    "sortNum": 450000,
+    "created": "2022-08-10T12:53:43.269Z",
+    "modified": "2022-08-10T12:53:43.269Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "6f004c1b-f008-46bc-aceb-43a8ea99db04",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/notification/get-all-by-userid",
+    "url": "{{url}}/notification/get-all-by-userid",
+    "method": "POST",
+    "sortNum": 460000,
+    "created": "2022-08-10T12:53:43.270Z",
+    "modified": "2022-10-14T13:56:57.195Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"pageNumber\":2,\n    \"pagePerSize\":10\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "6c7fb5d0-dd00-4945-b38a-3017e4ffeebc",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/poll/create",
+    "url": "{{url}}/poll/create",
+    "method": "POST",
+    "sortNum": 470000,
+    "created": "2022-08-10T12:53:43.271Z",
+    "modified": "2022-08-10T12:53:43.271Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n    \"message\":\"Who is You\",\r\n    \"options\":[\"i am king\", \"i am god\", \"i am all\"],\r\n    \"noOfActiveDay\":1,\r\n    \"type\":\"adminType\"\r\n}"
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "5c773d9b-58ce-46af-95fd-e2f39e3bca88",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/poll/vote",
+    "url": "{{url}}/poll/vote",
+    "method": "POST",
+    "sortNum": 480000,
+    "created": "2022-08-10T12:53:43.272Z",
+    "modified": "2022-08-10T12:53:43.272Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n    \"pollId\":\"6251765c48036e45c8419561\",\r\n    \"optionId\":\"6251765c48036e45c841955e\"\r\n}"
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMjdhYzIwMWI4NTRjNThmNDQyNDA2NSIsImVtYWlsIjoiYWJjQGdtYWlsLmNvbSIsImZpcnN0TmFtZSI6ImdhamVuZHJhIiwibGFzdE5hbWUiOiJQcmF0YXAiLCJhZGRyZXNzXzEiOiJwdW5lIiwiYWRkcmVzc18yIjpudWxsLCJ6aXBDb2RlIjpudWxsLCJzdGF0ZSI6bnVsbCwicHJvZmlsZVBob3RvIjoiaHR0cHM6Ly9jaGFtaHVudC1maWxlLXNhdmUtYXBwLnMzLmFtYXpvbmF3cy5jb20vMTM4LTEzODcwNjNfY2xpY2stdG8tbWFnbmlmeS1wbmctMjAwa2ItY2xpcGFydF8yNV8zXzIwMjJfN18wOF9QTS5wbmciLCJhYm91dE1lIjpudWxsLCJhY3RpdmUiOnRydWUsImlhdCI6MTY0OTUwNTU5NCwiZXhwIjoxNjQ5NTkxOTk0fQ.xgWcph5nM7oJ3R-yDEpD29oCTd3oei_P5KDvR40E_Lw"
+    }
+  },
+  {
+    "_id": "92216634-8e42-427d-b66e-366d6fa97110",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/carousel/create",
+    "url": "{{url}}/carousel/create",
+    "method": "POST",
+    "sortNum": 490000,
+    "created": "2022-08-10T12:53:43.273Z",
+    "modified": "2022-11-08T09:48:33.388Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "priority",
+          "value": "1"
+        }
+      ],
+      "files": [
+        {
+          "name": "uploader",
+          "value": "c:\\Users\\anush\\Downloads\\HD-wallpaper-ms-dhoni-chennai-super-kings-cricket-csk-definitely-not-india-sports.jpg"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "7d60ebbe-6cee-44aa-9f49-e9699f009716",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/carousel/carouselById/625d41efbae6937834c251a8",
+    "url": "{{url}}/carousel/carouselById/625d41efbae6937834c251a8",
+    "method": "GET",
+    "sortNum": 500000,
+    "created": "2022-08-10T12:53:43.274Z",
+    "modified": "2022-08-10T12:53:43.274Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "eb8055e0-c368-4bf3-98fa-2f92caa07a2f",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/carousel/getAllByPriority",
+    "url": "{{url}}/carousel/getAllByPriority",
+    "method": "GET",
+    "sortNum": 510000,
+    "created": "2022-08-10T12:53:43.275Z",
+    "modified": "2022-08-10T12:53:43.275Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "d0431bf4-d18d-48df-bf27-a16f0be32c29",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/carousel/updatePriorityWithId",
+    "url": "{{url}}/carousel/updatePriorityWithId",
+    "method": "POST",
+    "sortNum": 520000,
+    "created": "2022-08-10T12:53:43.276Z",
+    "modified": "2022-08-10T12:53:43.276Z",
+    "headers": [],
+    "body": {
+      "type": "json",
+      "raw": "[{\r\n    \"id\":\"625d443d645f7b75d42f0fea\",\r\n    \"priority\": 3\r\n}]"
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "7f4c19f0-a3d5-4964-9eae-0b1484ab31a3",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/poll/adminPolls/1/10",
+    "url": "{{url}}/poll/adminPolls/1/10",
+    "method": "GET",
+    "sortNum": 530000,
+    "created": "2022-08-10T12:53:43.277Z",
+    "modified": "2022-08-10T12:53:43.277Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "673b4858-8eb7-46d2-b484-089694aec1ef",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/get-following-user",
+    "url": "{{url}}/auth/get-following-user",
+    "method": "GET",
+    "sortNum": 540000,
+    "created": "2022-08-10T12:53:43.278Z",
+    "modified": "2022-08-10T12:53:43.278Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "51ff37ad-06e8-49ec-9318-634a2e74bab3",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "{{url}}/feed/feedCommnetById/6272d1536a8d4b59ccfbcc50",
+    "url": "{{url}}/feed/feedCommnetById/6272d1536a8d4b59ccfbcc50",
+    "method": "GET",
+    "sortNum": 550000,
+    "created": "2022-08-10T12:53:43.279Z",
+    "modified": "2022-08-10T12:53:43.279Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "8c84f41f-833f-49e9-a493-6c17ef2e39b1",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "{{url}}/auth/validateToken",
+    "url": "{{url}}/auth/validateToken",
+    "method": "GET",
+    "sortNum": 560000,
+    "created": "2022-08-10T12:53:43.281Z",
+    "modified": "2022-08-10T12:53:43.281Z",
+    "headers": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    }
+  },
+  {
+    "_id": "1ac8701b-08eb-4eed-846a-35e6dc5d9003",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "{{url}}/save-error-in-aws",
+    "url": "{{url}}/save-error-in-aws",
+    "method": "POST",
+    "sortNum": 570000,
+    "created": "2022-08-19T09:10:30.508Z",
+    "modified": "2022-08-19T09:11:33.513Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"logFolderName\":\"logFolderName\",\n  \"message\":\"message\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ab86a43f-ecbc-4780-9b63-9239950c2e39",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "{{url}}/upload-file",
+    "url": "{{url}}/upload-file",
+    "method": "POST",
+    "sortNum": 580000,
+    "created": "2022-08-22T14:54:28.875Z",
+    "modified": "2022-08-22T15:03:41.843Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [],
+      "files": [
+        {
+          "name": "uploader",
+          "value": "..\\..\\..\\OneDrive - Konecranes Plc\\Desktop\\Capture2.PNG"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "ce05390e-a87b-44cd-be8a-6d2fa02739a5",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/name-search Copy",
+    "url": "{{url}}/auth/given-runs",
+    "method": "POST",
+    "sortNum": 155000,
+    "created": "2022-08-26T18:41:36.869Z",
+    "modified": "2022-08-26T19:05:00.335Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"userId\":\"630461190c9f7463913c1a07\",\n    \"givenRun\":10\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "60c318ad-fe8b-47f0-be99-c5b7885be928",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "f1267f5b-1798-43e8-9aa0-1b4ad6858ecd",
+    "name": "http://localhost:3002/deal/redeemHistory",
+    "url": "{{url}}/deal/redeemHistory?fromDate=2022-09-05T15:07:36.942Z",
+    "method": "GET",
+    "sortNum": 517500,
+    "created": "2022-09-05T05:03:36.644Z",
+    "modified": "2022-11-08T05:04:55.819Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "fromDate",
+        "value": "2022-09-05T15:07:36.942Z",
+        "isPath": false
+      }
+    ],
+    "auth": {
+      "type": "bearer",
+      "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTRiZGU3Y2FmOWUzY2ZmMTYwNTJkNyIsImVtYWlsIjoibWl0ZXNoMjFqdW5AZ21haWwuY29tIiwiZmlyc3ROYW1lIjoiTWl0ZXNoIiwibGFzdE5hbWUiOiJTYWh1IiwiYWN0aXZlIjpmYWxzZSwiaWF0IjoxNjYyMzU0MTQ2LCJleHAiOjE2NjI0NDA1NDZ9.4TSOAhNeK9reFuklLjPNhl4E8aj1hQUfBUW9dez92TE"
+    },
+    "tests": []
+  },
+  {
+    "_id": "25377b61-9700-47ea-970f-6714b6091487",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "create",
+    "url": "{{url}}/feed/create",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-09-23T16:11:43.534Z",
+    "modified": "2022-09-27T07:01:20.985Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"postMessage\":\"hello\",\n  \"postImageURL\":\"\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "e41c4a9b-0a1b-49ab-a76d-fe0a08f19b25",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "update",
+    "url": "{{url}}/feed/update",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-09-24T18:35:16.966Z",
+    "modified": "2022-09-27T07:01:22.147Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\":\"\",\n  \"postMessage\":\"\",\n  \"postImageURL\":\"\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "96ba9a2c-529e-4eea-ac77-02d54ca5dabe",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "delete",
+    "url": "{{url}}/feed/delete",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-09-24T18:47:43.363Z",
+    "modified": "2022-09-27T07:01:23.250Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\":\"632f4d44158507e2136f51de\",\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "8c262733-4674-454a-b05c-812b0eca43ca",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "sharefeed",
+    "url": "{{url}}/feed/shared",
+    "method": "POST",
+    "sortNum": 50000,
+    "created": "2022-09-24T19:01:11.786Z",
+    "modified": "2022-10-06T05:57:11.461Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"feedId\":\"633e6d2ec95f5d81fb5b74c1\",\n  \"comment\":\"rq\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "3933e8e4-27d0-4bd4-be3d-9b3e9996abbe",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "3cb0f463-68e1-4841-8df6-a511ec23d338",
+    "name": "getSharedfeedDetails",
+    "url": "{{url}}/feed/getSharedfeedDetails",
+    "method": "POST",
+    "sortNum": 130000,
+    "created": "2022-09-25T20:28:47.845Z",
+    "modified": "2022-09-27T07:01:43.262Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"userId\":\"\",\n  \"feedId\":\"\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "d3b725b2-abb0-4af0-9959-4d571d688e37",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "4a4563d9-2702-494c-9c91-596c7e6d9dc9",
+    "name": "delete",
+    "url": "{{url}}/feed/comment/delete",
+    "method": "POST",
+    "sortNum": 640000,
+    "created": "2022-09-26T20:08:46.358Z",
+    "modified": "2022-09-26T20:11:08.433Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"commentId\":\"6331a413cbee41ecc28eda34\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "2b312abc-ec84-4f47-936e-8a8611d6dc41",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "4a4563d9-2702-494c-9c91-596c7e6d9dc9",
+    "name": "getByfeedId",
+    "url": "{{url}}/feed/comment/getByfeedId/634c3c770c53263aa7e5871c/1/2",
+    "method": "GET",
+    "sortNum": 650000,
+    "created": "2022-09-26T20:20:31.707Z",
+    "modified": "2022-10-18T08:02:55.167Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "ce8710cb-d9d2-4aa5-bdcf-b82af49cba22",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "d066017c-d501-4f29-84e0-d54a783f9451",
+    "name": "addRun",
+    "url": "{{url}}/feed/run/addRun",
+    "method": "POST",
+    "sortNum": 660000,
+    "created": "2022-09-27T05:00:34.995Z",
+    "modified": "2022-10-17T12:23:19.415Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"givenRun\":2,\n  \"feedId\":\"634d490adfd23beaa2be5885\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "50391e3d-6abe-4dbd-a57f-072ed625965a",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "e664a165-a4ef-4366-960b-3e949de3dbdb",
+    "name": "createReport",
+    "url": "{{url}}/feed/report/create",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-09-27T12:13:54.258Z",
+    "modified": "2022-10-18T06:42:01.595Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"reportText\":\"spam\",\n  \"feedId\":\"634e3d0ac7efb844cf83da61\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "5badcd26-b509-4dbf-b5c6-79bef249c713",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "d066017c-d501-4f29-84e0-d54a783f9451",
+    "name": "getRunByUserIdAndfeedId",
+    "url": "{{url}}/feed/run/getRunByUserIdAndfeedId/6249ac570025a0633847af58/633560c6db1c9a261ebf3e10",
+    "method": "GET",
+    "sortNum": 680000,
+    "created": "2022-09-29T10:58:25.477Z",
+    "modified": "2022-09-29T11:03:53.077Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "03446ef2-3823-411f-a5b1-a8810214c089",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "65203a5b-c058-4a75-8819-230ae449c47c",
+    "name": "block-user",
+    "url": "{{url}}/auth/block/block-user",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-10-13T04:59:22.309Z",
+    "modified": "2022-10-18T05:19:47.019Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"blockedUserId\":\"62f10c678bbc7d2fc8eb5679\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "087c2aa4-2422-4eea-9d8f-817e4230d3b4",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "65203a5b-c058-4a75-8819-230ae449c47c",
+    "name": "un-block-user",
+    "url": "{{url}}/auth/block/un-block-user",
+    "method": "DELETE",
+    "sortNum": 20000,
+    "created": "2022-10-13T04:59:50.178Z",
+    "modified": "2022-10-18T05:25:19.838Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"blockedUserId\":\"62f10c678bbc7d2fc8eb5679\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "4b436525-4ce0-4778-a208-47054e33973e",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "65203a5b-c058-4a75-8819-230ae449c47c",
+    "name": "report-user",
+    "url": "{{url}}/auth/block/report-user",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-10-13T07:03:48.241Z",
+    "modified": "2022-10-18T06:40:18.431Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"reportedUserId\":\"634e4986ba98d5b292289562\",\n  \"reportedReason\":\"spam\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "fe5f2dfc-7d3f-4aef-838b-10e056f060a6",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "f1267f5b-1798-43e8-9aa0-1b4ad6858ecd",
+    "name": "getAll",
+    "url": "{{url}}/deal/getAll",
+    "method": "GET",
+    "sortNum": 690000,
+    "created": "2022-11-08T04:38:55.698Z",
+    "modified": "2022-11-08T04:40:15.521Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "93ce6ee8-6a9d-461a-9854-d2d6c54dd074",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "1b5accf2-9822-4829-9477-082124a8fba9",
+    "name": "createEvent",
+    "url": "{{url}}/events/create",
+    "method": "POST",
+    "sortNum": 710000,
+    "created": "2022-11-08T09:50:30.733Z",
+    "modified": "2022-11-09T10:17:22.592Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"eventTitle\":\"tennis match\",\n  \"startDate\":\"8 nov 2022\",\n  \"startTime\":\"5 PM\",\n  \"eventdescription\":\"indoor event for under 19\",\n  \"registrationFee\":\"500\",\n  \"eventLocation\":\"Mumbai\",\n  \"eventNameCode\":\"MB1\",\n  \"endDate\":\"9 nov 2022\",\n  \"endTime\":\"4 PM\",\n  \"eventBanner\":\"fkgfkg.jpg\"\n  \n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "e3e05b51-826e-4371-897b-571fe47a108d",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "1b5accf2-9822-4829-9477-082124a8fba9",
+    "name": "getAll",
+    "url": "{{url}}/events/getAll/1/10",
+    "method": "GET",
+    "sortNum": 720000,
+    "created": "2022-11-08T12:13:49.493Z",
+    "modified": "2022-11-22T08:55:01.619Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "03947838-b028-4244-96f3-6850b11214b9",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "1b5accf2-9822-4829-9477-082124a8fba9",
+    "name": "delete",
+    "url": "{{url}}/events/delete",
+    "method": "DELETE",
+    "sortNum": 730000,
+    "created": "2022-11-08T12:21:06.578Z",
+    "modified": "2022-11-09T10:15:37.752Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\":\"636a51ada94f44f94c1938c0\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "b776ed28-4ebf-4d4c-b2e4-bf3262e7526b",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "1b5accf2-9822-4829-9477-082124a8fba9",
+    "name": "getEventById",
+    "url": "{{url}}/events/getEventById/636a51ada94f44f94c1938c0",
+    "method": "GET",
+    "sortNum": 740000,
+    "created": "2022-11-08T12:21:41.578Z",
+    "modified": "2022-11-08T14:55:22.599Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "3c202f91-8252-4d95-be7c-c7307f226001",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "1b5accf2-9822-4829-9477-082124a8fba9",
+    "name": "update",
+    "url": "{{url}}/events/update",
+    "method": "POST",
+    "sortNum": 750000,
+    "created": "2022-11-09T05:59:58.992Z",
+    "modified": "2022-11-09T14:26:01.839Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"eventTitle\":\"cricket\",\n  \"startDate\":\"8 nov 2022\",\n  \"startTime\":\"5 PM\",\n  \"eventdescription\":\"indoor event for under 19\",\n  \"registrationFee\":\"500\",\n  \"eventLocation\":\"Mumbai\",\n  \"eventNameCode\":\"MB1\",\n  \"endDate\":\"9 nov 2022\",\n  \"endTime\":\"4 PM\",\n  \"eventBanner\":\"fkgfkg.jpg\",\n  \"id\":\"636a51ada94f44f94c1938c0\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "dd3c3fe6-e88f-4740-8a04-bdc79e6ca9bc",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "e5c781be-89ee-4505-880c-00ef00fe063f",
+    "name": "getAll",
+    "url": "{{url}}/events/userEvent/getAll/1/10",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-11-09T08:16:38.378Z",
+    "modified": "2022-11-09T08:17:09.685Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "979599ee-4b9c-4181-b698-517e42e20c80",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "e5c781be-89ee-4505-880c-00ef00fe063f",
+    "name": "register",
+    "url": "{{url}}/events/userEvent/register",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2022-11-09T08:28:59.504Z",
+    "modified": "2022-11-22T09:07:56.348Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"firstName\":\"anu\",\n  \"lastName\":\"a\",\n  \"email\":\"anushiyaponnusamy@gmail.com\",\n  \"address\":\"mm\",\n  \"dateOfBirth\":\"aa\",\n  \"idPhoto\":\"aa\",\n  \"height\":\"aa\",\n  \"weight\":\"aa\",\n  \"cricketCoaching\":\"yes\",\n  \"isPlayedCricket\":\"yes\",\n  \"eventTitle\":\"tennis match\",\n  \"startDate\":\"8 nov 2022\",\n  \"startTime\":\"5 PM\",\n  \"eventdescription\":\"indoor event for under 19\",\n  \"registrationFee\":\"500\",\n  \"eventLocation\":\"Mumbai\",\n  \"eventNameCode\":\"MB1\",\n  \"endDate\":\"9 nov 2022\",\n  \"endTime\":\"4 PM\",\n  \"eventBanner\":\"fkgfkg.jpg\",\n  \"eventId\":\"63736d50c09022f94c1764d9\"\n  \n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "893dcd11-c676-4c7e-a9bb-a0084d3f8131",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "e5c781be-89ee-4505-880c-00ef00fe063f",
+    "name": "getEventById",
+    "url": "{{url}}/events/userEvent/getEventById/636b7026edae022aab4860bb",
+    "method": "GET",
+    "sortNum": 15000,
+    "created": "2022-11-09T09:20:13.979Z",
+    "modified": "2022-11-09T09:21:00.913Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "1569aa26-a5a5-4cf4-a050-34c5e21ddf89",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "e5c781be-89ee-4505-880c-00ef00fe063f",
+    "name": "delete ",
+    "url": "{{url}}/events/userEvent/delete",
+    "method": "DELETE",
+    "sortNum": 12500,
+    "created": "2022-11-09T09:21:08.544Z",
+    "modified": "2022-11-09T09:21:50.866Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"id\":\"636b7026edae022aab4860bb\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "e7dd1b3e-3197-4bd6-b335-2500859b0b6a",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "e5c781be-89ee-4505-880c-00ef00fe063f",
+    "name": "getUserEventByUserIdAndEventId",
+    "url": "{{url}}/events/userEvent/getUserEventByUserIdAndEventId",
+    "method": "POST",
+    "sortNum": 770000,
+    "created": "2022-11-22T08:49:55.945Z",
+    "modified": "2022-11-22T12:01:40.778Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"userId\":\"634ce7aac9db03b886d42e72\",\n  \"eventId\":\"6377402471682bbad1cd95f9\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "39fcdc4b-4f7a-4107-a63b-f78017cd6f1c",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "e5c781be-89ee-4505-880c-00ef00fe063f",
+    "name": "getRegisteredEventsByUserId",
+    "url": "{{url}}/events/userEvent/getRegisteredEventsByUserId",
+    "method": "GET",
+    "sortNum": 780000,
+    "created": "2022-11-25T09:04:34.731Z",
+    "modified": "2022-11-25T09:35:55.664Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "5b2c8b91-afd6-432f-b84d-56276d992211",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "followersRankingOfAllTime",
+    "url": "{{url}}/leaderboard/followersRankingOfAllTime/1/10",
+    "method": "GET",
+    "sortNum": 140000,
+    "created": "2022-12-01T13:11:48.522Z",
+    "modified": "2022-12-20T08:35:57.759Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "495df2cb-cb3e-4d2a-86d7-0d401971e045",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "postRankingOfAllTime",
+    "url": "{{url}}/leaderboard/postRankingOfAllTime/1/10",
+    "method": "GET",
+    "sortNum": 160000,
+    "created": "2022-12-01T13:12:05.880Z",
+    "modified": "2022-12-20T08:36:01.484Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "e63844ff-538d-45d9-83cc-ed8af31c6c9c",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "followersRankingToday",
+    "url": "{{url}}/leaderboard/followersRankingToday/1/10",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2022-12-02T09:55:50.873Z",
+    "modified": "2022-12-14T05:07:12.665Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "83555a55-6532-430d-b32b-c247156c8b90",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "postRankingOfThisWeek",
+    "url": "{{url}}/leaderboard/postRankingOfThisWeek/1/10",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2022-12-02T12:49:15.920Z",
+    "modified": "2022-12-14T05:07:24.253Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "54e1d290-a75c-4bb6-87f6-48be2e9ef429",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "postRankingToday",
+    "url": "{{url}}/leaderboard/postRankingToday/1/10",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2022-12-02T12:53:46.222Z",
+    "modified": "2022-12-14T05:07:18.615Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "d28f083e-ff56-4b67-94d4-c49d01a9528a",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "totalRunsRankingAllTimeMainPage",
+    "url": "{{url}}/leaderboard/totalRunsRankingAllTimeMainPage/1/9",
+    "method": "GET",
+    "sortNum": 180000,
+    "created": "2022-12-06T08:28:45.325Z",
+    "modified": "2022-12-20T08:36:15.283Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "89c8cd50-51c9-4950-b0d1-2f3a2e839cf2",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "totalRunsRankingThisWeekMainPage",
+    "url": "{{url}}/leaderboard/totalRunsRankingThisWeekMainPage/1/10",
+    "method": "GET",
+    "sortNum": 120000,
+    "created": "2022-12-06T08:31:30.135Z",
+    "modified": "2022-12-14T05:07:51.204Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "26d0ac24-f6c4-4efa-b3a9-ab9c5c6a7f3f",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "totalRunsRankingTodayMainPage",
+    "url": "{{url}}/leaderboard/totalRunsRankingTodayMainPage/1/10",
+    "method": "GET",
+    "sortNum": 110000,
+    "created": "2022-12-06T08:35:31.472Z",
+    "modified": "2022-12-14T05:07:40.241Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "62013107-fd9f-4bfd-bc86-daf543dfd66f",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "totalRunsRankingAllTimeMainPageByUserId",
+    "url": "{{url}}/leaderboard/totalRunsRankingAllTimeMainPageByUserId",
+    "method": "GET",
+    "sortNum": 170000,
+    "created": "2022-12-06T11:15:10.616Z",
+    "modified": "2022-12-20T08:36:03.331Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "a91d3cd6-8b3f-45f5-a6bd-011b3463d277",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "totalRunsRankingThisWeekMainPageByUserId",
+    "url": "{{url}}/leaderboard/totalRunsRankingThisWeekMainPageByUserId",
+    "method": "GET",
+    "sortNum": 90000,
+    "created": "2022-12-07T04:53:34.558Z",
+    "modified": "2022-12-14T05:07:30.846Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "b10e7edc-fdd5-4deb-941e-769e3aa91a6f",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "totalRunsRankingTodayMainPageByUserId",
+    "url": "{{url}}/leaderboard/totalRunsRankingTodayMainPageByUserId",
+    "method": "GET",
+    "sortNum": 100000,
+    "created": "2022-12-07T05:00:11.604Z",
+    "modified": "2022-12-14T05:07:35.486Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "7b5b986f-1e9d-40ac-8878-2e244fceac7b",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "followersRankingOfAllTimeByUserId",
+    "url": "{{url}}/leaderboard/followersRankingOfAllTimeByUserId",
+    "method": "GET",
+    "sortNum": 130000,
+    "created": "2022-12-12T05:48:38.750Z",
+    "modified": "2022-12-20T08:35:56.250Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "c4eb4d88-a4fa-407d-8016-8800180bf45c",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "followersRankingOfThisWeek",
+    "url": "{{url}}/leaderboard/followersRankingOfThisWeek/1/10",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-12-12T05:52:35.322Z",
+    "modified": "2022-12-14T05:07:03.146Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "743065dd-8c9f-4824-8dec-8480de45f232",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "followersRankingOfThisWeekByUserId",
+    "url": "{{url}}/leaderboard/followersRankingOfThisWeekByUserId",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2022-12-12T05:54:02.785Z",
+    "modified": "2022-12-14T05:06:59.771Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "04ea961b-dcdd-4f6d-a5c8-ae0d58ffc976",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "postRankingOfAllTimeByUserId",
+    "url": "{{url}}/leaderboard/postRankingOfAllTimeByUserId",
+    "method": "GET",
+    "sortNum": 150000,
+    "created": "2022-12-12T07:29:13.073Z",
+    "modified": "2022-12-20T08:35:59.643Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "de7544fd-c312-49d2-be99-3024a946cc22",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "postRankingOfThisWeekByUserId",
+    "url": "{{url}}/leaderboard/postRankingOfThisWeekByUserId",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2022-12-12T09:07:38.087Z",
+    "modified": "2022-12-14T05:07:21.798Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "fceceb6d-885c-48ef-aa09-63c8a39ae874",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "postRankingTodayByUserId",
+    "url": "{{url}}/leaderboard/postRankingTodayByUserId",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2022-12-12T09:40:49.816Z",
+    "modified": "2022-12-14T05:07:16.091Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "d2396bcc-d50f-406a-91de-2e5c05acea3f",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "da251da1-614c-488b-9404-0f3faa3ceab3",
+    "name": "followersRankingTodayByUserId",
+    "url": "{{url}}/leaderboard/followersRankingTodayByUserId",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2022-12-12T10:01:51.787Z",
+    "modified": "2022-12-14T05:07:05.119Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "fe2ad77a-9819-47f8-b2cc-0bd1f675ab74",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "todayDetails",
+    "url": "{{url}}/leaderboard/todayDetails",
+    "method": "GET",
+    "sortNum": 15000,
+    "created": "2022-12-13T09:43:44.255Z",
+    "modified": "2022-12-13T09:44:15.805Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "129b3279-4928-4f44-9d2c-205e868dd7f5",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "thisWeekDetails",
+    "url": "{{url}}/leaderboard/thisWeekDetails",
+    "method": "GET",
+    "sortNum": 17500,
+    "created": "2022-12-13T09:57:03.562Z",
+    "modified": "2022-12-13T10:09:00.321Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "76a111ec-428f-4dee-ba2f-4b751ee26c94",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "feedToday",
+    "url": "{{url}}/leaderboard/feedToday/1/10",
+    "method": "GET",
+    "sortNum": 16250,
+    "created": "2022-12-14T05:09:37.854Z",
+    "modified": "2022-12-14T08:17:40.100Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "c67a9548-0a4a-4e70-b5a1-33bf6a6832ee",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "runsTodayOfUserId",
+    "url": "{{url}}/leaderboard/runsTodayOfUserId",
+    "method": "GET",
+    "sortNum": 15625,
+    "created": "2022-12-14T05:09:42.331Z",
+    "modified": "2022-12-14T05:25:34.578Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "dcc551ff-3161-4606-810f-04b70fb8e87d",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "runsToday",
+    "url": "{{url}}/leaderboard/runsToday/1/10",
+    "method": "GET",
+    "sortNum": 15312.5,
+    "created": "2022-12-14T05:09:47.664Z",
+    "modified": "2022-12-14T05:18:25.557Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "07bda118-b308-41e5-8b9c-5d70d93982a1",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "feedTodayOfUserId",
+    "url": "{{url}}/leaderboard/feedTodayOfUserId",
+    "method": "GET",
+    "sortNum": 16875,
+    "created": "2022-12-14T08:21:06.453Z",
+    "modified": "2022-12-14T08:21:25.360Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "3d02b1c7-2400-43e8-a712-a8b0896c837c",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "followersToday",
+    "url": "{{url}}/leaderboard/followersToday/1/10",
+    "method": "GET",
+    "sortNum": 16562.5,
+    "created": "2022-12-14T08:26:48.326Z",
+    "modified": "2022-12-14T08:27:09.288Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "c07c9599-d215-4cec-a7a5-4171279dc4a3",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "followersTodayOfUserId",
+    "url": "{{url}}/leaderboard/followersTodayOfUserId",
+    "method": "GET",
+    "sortNum": 16718.8,
+    "created": "2022-12-14T08:29:27.045Z",
+    "modified": "2022-12-14T08:29:46.090Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "2e965f0e-c1c0-45d7-883b-6de8cf03b25c",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "runsThisWeek",
+    "url": "{{url}}/leaderboard/runsThisWeek/1/10",
+    "method": "GET",
+    "sortNum": 15468.8,
+    "created": "2022-12-14T08:34:12.470Z",
+    "modified": "2022-12-14T08:41:52.954Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "37b5fd73-5f1d-43cd-b199-8dcd2d90aa03",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "runsThisWeekOfUserId",
+    "url": "{{url}}/leaderboard/runsThisWeekOfUserId",
+    "method": "GET",
+    "sortNum": 15546.9,
+    "created": "2022-12-14T08:34:55.943Z",
+    "modified": "2022-12-14T08:35:18.854Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "c71dcc07-5cec-43fd-841a-4259ebddf71b",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "feedThisWeek",
+    "url": "{{url}}/leaderboard/feedThisWeek/1/10",
+    "method": "GET",
+    "sortNum": 15507.8,
+    "created": "2022-12-14T08:40:30.345Z",
+    "modified": "2022-12-14T08:41:33.932Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "6f99aa07-f929-4127-affb-9c7f48f62123",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "feedThisWeekOfUserId",
+    "url": "{{url}}/leaderboard/feedThisWeekOfUserId",
+    "method": "GET",
+    "sortNum": 15527.3,
+    "created": "2022-12-14T08:41:06.708Z",
+    "modified": "2022-12-14T08:42:18.428Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "46041a5f-355a-4004-8095-b8f5e8d696d4",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "followersThisWeek",
+    "url": "{{url}}/leaderboard/followersThisWeek/1/10",
+    "method": "GET",
+    "sortNum": 15517.5,
+    "created": "2022-12-14T08:51:19.404Z",
+    "modified": "2022-12-14T08:51:39.279Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "7c90c795-169d-45c1-90e3-c28e8cb4efec",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "followersThisWeekOfUserId",
+    "url": "{{url}}/leaderboard/followersThisWeekOfUserId",
+    "method": "GET",
+    "sortNum": 15522.4,
+    "created": "2022-12-14T08:53:27.143Z",
+    "modified": "2022-12-14T08:54:04.322Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "2bf612cf-0beb-469f-9d63-5e97a28307e2",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "",
+    "name": "http://localhost:3002/auth/mention-name-search Copy",
+    "url": "{{url}}/auth/mention-name-search",
+    "method": "POST",
+    "sortNum": 152500,
+    "created": "2022-12-21T10:13:10.336Z",
+    "modified": "2022-12-21T10:24:37.562Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"searchText\":\"cricket\",\n     \"pageNumber\":10,\n    \"pagePerSize\":10\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "73383a33-8a5f-40c7-9bd8-e2ca95e4aa8c",
+    "colId": "0d9b612e-e1e9-4b39-95a9-c72dc5f32f7b",
+    "containerId": "46b86c4e-be83-4c1a-922b-f8993b330d90",
+    "name": "thisYearDetails",
+    "url": "{{url}}/leaderboard/thisYearDetails",
+    "method": "GET",
+    "sortNum": 27500,
+    "created": "2022-12-22T05:45:42.430Z",
+    "modified": "2022-12-22T05:46:08.763Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{token}}"
+    },
+    "tests": []
+  }
+]
