@@ -5,15 +5,10 @@ const dbHelper = require('./OTPDbHelper');
 const otpController = {};
 otpController.sendOTP = async (req) => {
   try {
-    // const human = await authHelper.validateHuman(req.body.captchaToken);
-    // if (!human) {
-    //   return 'you are bot!';
-    // }
     if (!req.body.email) return 'Field Required!';
     if (
-      req.headers.origin === process.env.ROOTUIADDRESS ||
-      (req.body.captchaToken && req.body.captchaToken.includes('android'))
-    ) {
+      req.headers.origin === process.env.ROOTUIADDRESS)
+    {
       const otp = Math.floor(1000 + Math.random() * 9000);
       dbHelper.upsertOTP(req.body.email, otp).then(() => {
         const mail = {
@@ -25,7 +20,7 @@ otpController.sendOTP = async (req) => {
                 <strong>${otp}</strong> is the OTP required to complete your registration.
                 <br/>
                 Regards,<br/>
-                Team Cricket Media
+                Cricket Media
                `,
         };
         emailObj.send(mail);

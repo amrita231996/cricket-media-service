@@ -1,6 +1,8 @@
 const _ = require('lodash');
 const { Types } = require('mongoose');
 const authHelper = require('../auth/dbHelper');
+const commentDbHelper = require('./feedComment/dbHelper');
+const reportDbHelper = require('./feedReport/dbHelper');
 const authService = require('../helper/auth');
 const Feed = require('./model');
 
@@ -195,6 +197,15 @@ feedDbHelper.getAllbyUserIds = async (userIds, skipNumber, numberPerPage) => {
   }
 };
 
+feedDbHelper.addFeedCountAndReportCount =  async(feedObjects)=>{
+  for (let index = 0; index < feedObjects.length; index++) {
+    const element = feedObjects[index];
+    feedObjects[index].postCommentCount =  await commentDbHelper.getCountByFeedId(element._id);
+    feedObjects[index].postReportCount =  await reportDbHelper.getCountByFeedId(element._id);
+  }
+  return feedObjects;
+}
+
 feedDbHelper.getMyFeedsbyUserIdInSortAndPagination = async (
   userIds,
   skipNumber,
@@ -203,7 +214,7 @@ feedDbHelper.getMyFeedsbyUserIdInSortAndPagination = async (
   reportedFeedID
 ) => {
   try {
-    return await Feed.find({
+    const feedObjects = await Feed.find({
       _id: { $nin: reportedFeedID },
       userId: { $in: userIds },
       createdDate: { $lte: new Date(browseringStartTime) },
@@ -218,7 +229,6 @@ feedDbHelper.getMyFeedsbyUserIdInSortAndPagination = async (
         postImageURL: 1,
         sharedDetail: 1,
         postCommentCount: 1,
-        postRunCount: 1,
         postReportCount: 1,
         createdDate: 1,
         userId: 1,
@@ -226,6 +236,7 @@ feedDbHelper.getMyFeedsbyUserIdInSortAndPagination = async (
         userProfilePhoto: 1,
       })
       .lean();
+      return await feedDbHelper.addFeedCountAndReportCount(feedObjects);
   } catch (error) {
     return Promise.reject(error);
   }

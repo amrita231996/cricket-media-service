@@ -128,4 +128,15 @@ CommentModelDbHelper.updateUndefinedUsername = async () => {
   }
 };
 
+
+CommentModelDbHelper.getCountByFeedId = async (feedId) => {
+  try {
+    return await Comment.countDocuments({
+      postId: feedId,
+    });
+  } catch (error) {
+    return Promise.reject(error);
+  }
+};
+
 module.exports = CommentModelDbHelper;

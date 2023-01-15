@@ -12,6 +12,7 @@ const feed = {};
 
 feed.create = async (req) => {
   try {
+    console.log('req.body',req.body);
     if (
       !(
         req.body &&
@@ -24,62 +25,7 @@ feed.create = async (req) => {
     const createViewModel = viewModel.createViewModel(req);
 
     const newFeed = await dbHelper.save(createViewModel);
-
-    // ...find all created Feed by today date
-    const todayCreatedFeeds = await dbHelper.getFeedByTodayDateAndUserId(
-      req.decoded.id
-    );
-    const { mentionedIds } = req.body;
-    if (mentionedIds) {
-      mentionedIds.forEach(async (mid) => {
-        const details = await getUserDetailsByUserId(mid);
-        // Mentioned notifications
-        const datas = {
-          firstName: details.firstName,
-          lastName: details.lastName,
-          createdUserId: mid,
-          createdUserProfilePhoto: details.profilePhoto,
-          idForUI: newFeed._id,
-          userNameForUI: `${req.decoded.firstName} ${req.decoded.lastName}`,
-          userProfilePhotoForUI: req.decoded.profilePhoto,
-        };
-      });
-    }
-    // ...if count is less to MAX_CREATE_FEED_COUNT_PERDAY then
-    if (
-      todayCreatedFeeds.length <
-      parseInt(process.env.MAX_CREATE_FEED_COUNT_PERDAY, 10)
-    ) {
-      // ...allow to add in user default run
-      await userDbHelper.updateDefaultRun(req.decoded.id, {
-        givenRun: parseInt(process.env.CREATE_FEED_RUN, 10),
-        createdDate: new Date(),
-        type: 'createdfeedperday',
-        runGivenByUserId: 'system',
-      });
-      // ...emit total run
-      const totalRun = await authService.getTotalRunByUserId(req.decoded.id);
-      const run = { totalRun, userId: req.decoded.id };
-      // ..save nad emit notification
-      const data = {
-        firstName: req.decoded.firstName,
-        lastName: req.decoded.lastName,
-        givenRun: process.env.CREATE_FEED_RUN,
-        createdUserId: req.decoded.id,
-        createdUserProfilePhoto: req.decoded.profilePhoto,
-        idForUI: newFeed._id,
-        userNameForUI: null,
-        userProfilePhotoForUI: null,
-      };
-      return newFeed;
-    }
-    // ...send new feed created notification to followers
-    const followersLocalPromise = userDbHelper.getFollowersbyUserId(
-      req.decoded.id
-    );
-    controlerHelper.sendCreatedFeedNotificationToFollowers(
-      followersLocalPromise
-    );
+    
     return newFeed;
   } catch (err) {
     return Promise.reject(err);
@@ -324,9 +270,10 @@ feed.getAllbyUserId = async (req) => {
     );
     const userIds = [req.decoded.id];
     userIds.push(...userFollowingIds);
-    const reportedFeedID = await feedDbHelper.getAllReportedFeed(
+    const reportedFeedID = await feedDbHelper.getAllReportedfeed(
       req.decoded.id
     );
+    
     const reportedFeedIDArray = [];
     reportedFeedIDArray.push(...reportedFeedID.map((id) => id.postId));
     const defaultGroupNo = parseInt(process.env.ASYNC_GROUP, 10);

@@ -13,7 +13,6 @@ const { promisifyAll } = require('bluebird');
 const mongoose = require('mongoose');
 const http = require('http');
 require('./auth/admin');
-const proxy = require('express-http-proxy');
 const upload = require('./helper/upload');
 const authHelper = require('./helper/auth');
 const createsocket = require('./socket-server');

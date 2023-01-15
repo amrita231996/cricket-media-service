@@ -3,6 +3,7 @@ const emailObj = require('../helper/mail');
 const authService = require('../helper/auth');
 const dbHelper = require('./dbHelper');
 const viewModel = require('./viewModel');
+const inviteDbHelper = require('../invite/dbHelper');
 
 const users = {};
 
@@ -180,6 +181,9 @@ users.nameSearch = async (req) => {
       req.decoded.id,
       req.body.searchText
     );
+
+    return nameSearchs;
+    console.log('nameSearchs',nameSearchs,req.body);
 
     const skipNumber =
       (parseInt(req.body.pageNumber, 10) - 1) *

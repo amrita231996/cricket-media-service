@@ -101,7 +101,7 @@ router.post(
   authHelper.validateToken,
   (req, res, next) =>
     controller
-      .updateSharedfeed(req)
+      .updateSharedFeed(req)
       .then(() => res.status(200).json('shared feed updated!'))
       .catch((err) => next(err))
 );
@@ -111,7 +111,7 @@ router.get(
   authHelper.validateToken,
   (req, res, next) =>
     controller
-      .getMyfeed(req.params.id, req.params.pageNumber, req.params.pagePerSize)
+      .getMyFeed(req.params.id, req.params.pageNumber, req.params.pagePerSize)
       .then((data) => res.status(200).json(data))
       .catch((err) => next(err))
 );

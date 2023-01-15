@@ -70,4 +70,14 @@ feedReportDbHelper.updateUndefinedUsername = async () => {
   }
 };
 
+feedReportDbHelper.getCountByFeedId = async (feedId) => {
+  try {
+    return await feedReport.countDocuments({
+      postId: feedId,
+    });
+  } catch (error) {
+    return Promise.reject(error);
+  }
+};
+
 module.exports = feedReportDbHelper;

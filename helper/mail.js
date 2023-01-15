@@ -23,6 +23,7 @@ email.send = (mail) => {
     bcc: mail.bcc,
   };
 
+  console.log('smtp',smtp,mailOption);
   const transporter = nodemailer.createTransport(smtp);
 
   return new Promise((resolve, reject) => {

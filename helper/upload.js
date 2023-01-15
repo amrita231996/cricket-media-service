@@ -1,8 +1,33 @@
-const multerObj = require('multer');
+const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
 
 let filesStorgePath = [];
+
+const storage = multer.diskStorage({
+  destination: (req, file, callback) => {
+    console.log('file', req);
+    callback(null, process.env.imageStoragePath);
+  },
+  filename: (req, file, callback) => {
+    console.log('filefilefilefile', req);
+    const extension = path.extname(file.originalname);
+    const baseName = path.parse(file.originalname).name;
+    const year = new Date().getFullYear();
+    const month = new Date().getMonth() + 1;
+    const date = new Date().getDate();
+    let hour = new Date().getHours();
+    let minute = new Date().getMinutes();
+    const ampm = hour >= 12 ? 'PM' : 'AM';
+    hour %= 12;
+    hour = hour || 12;
+    minute = minute < 10 ? `0${minute}` : minute;
+    const updatedFile = `${baseName}_${date}_${month}_${year}_${hour}_${minute}_${ampm}${extension}`;
+    callback(null, updatedFile);
+  }
+});
+
+const upload = multer({ storage: storage }).array('uploader', process.env.maxUploadVideo);
 
 const uploadFile = {};
 
